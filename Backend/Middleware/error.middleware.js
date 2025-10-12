@@ -36,5 +36,5 @@ export { errorHandler, notFound };
 - Ensures consistent JSON error responses across the API.
 - Improves debugging in development, hides sensitive details in production.
 - Handles common cases like 404s and database ObjectId errors automatically.
-- Without this code below, Node would crash or return ugly HTML errors. This gives you clean, predictable error responses.    
+- Without this code above, Node would crash or return ugly HTML errors. This gives you clean, predictable error responses.    
 */}
