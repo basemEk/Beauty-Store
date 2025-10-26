@@ -29,9 +29,13 @@ const OrderSchema = mongoose.Schema({
         type: String
     },
 
+    email: {
+        type: String
+    },
+
     status: {
         type: Number,
-        default: 0   // 0 means the order has newly been created => the email hasn't been seng to the user. will be updated to 1 => pending order, na dhasn't been delivered to the client
+        default: 0   // 0 means the order has newly been created => the email hasn't been sent to the user. will be updated to 1 => pending order, na dhasn't been delivered to the client
     }
 }, {
     timestamps: true
