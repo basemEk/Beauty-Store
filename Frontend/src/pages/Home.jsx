@@ -1,7 +1,16 @@
+import Banner from "../components/Banner";
+import Category from "../components/Category";
+import Products from "../components/Products";
+
+
 function Home() {
   return (
     <>
-      <div>Hello from Home</div>
+      <div>
+        <Banner />
+        <Category />
+        <Products />
+      </div>
     </>
   );
 }
