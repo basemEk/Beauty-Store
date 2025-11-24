@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+.react-simple-star-rating {
+  display: flex !important;
+  flex-direction: row !important;
+}
