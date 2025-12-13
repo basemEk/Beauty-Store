@@ -1,10 +1,10 @@
 import { Rating } from "react-simple-star-rating";
 
-const Product = () => {
+const Product = ({img}) => {
     return (
     <div className="flex flex-col items-center justify-center h-[500px] m-[10px] cursor-pointer">
         <img
-          src="/serum1.png"
+          src={img}
           alt=""
           className="h-[400px] w-[300px] bg-cover"
         />

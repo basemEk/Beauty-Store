@@ -2,6 +2,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-rose-50 to-white pt-16 pb-8 px-4 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto">
+
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-12">
           
@@ -19,6 +20,7 @@ const Footer = () => {
               Let your skin flourish and embrace your natural radiance with Dubois Beauty.
             </p>
             <div className="flex space-x-3">
+              
               {/* Twitter */}
               <a 
                 href="#" 
@@ -192,7 +194,7 @@ const Footer = () => {
             </p>
 
             <div className="flex flex-wrap justify-center space-x-6">
-              {[
+              {[  
                 { name: 'Privacy Policy', path: '/privacy' },
                 { name: 'Terms of Service', path: '/terms' },
                 { name: 'Shipping Policy', path: '/shipping' },
