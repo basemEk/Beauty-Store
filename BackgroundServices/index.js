@@ -5,6 +5,8 @@ import cron from "node-cron";
 import sendWelcomeEmail from "./EmailServices/sendWelcomeEmail.js";
 import sendPendingOrderEmail from "./EmailServices/sendPendingOrderEmail.js";
 import sendPromotionEmail from "./EmailServices/sendPromotionEmail.js";
+import './index.css';
+
 
 dotenv.config();
 
