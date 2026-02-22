@@ -3,16 +3,18 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Users from "./pages/Users";
 import Products from "./pages/Products";
+import Orders from "./pages/Orders";
+import Banners from "./pages/Banners";
 
 function App() {
 
   const Layout = () => {
     return (
-      <div className="flex">
+      <div className="flex h-screen">
         <div>
           <Menu />
         </div>
-        <div>
+        <div className="flex-1">
           <Outlet />
         </div>
       </div>
@@ -36,6 +38,14 @@ function App() {
           path: "/products",
           element: <Products />
         },
+        {
+          path: "/orders",
+          element: <Orders />
+        },
+        {
+          path: "/banners",
+          element: <Banners />
+        }
       ]
     }
   ]);
