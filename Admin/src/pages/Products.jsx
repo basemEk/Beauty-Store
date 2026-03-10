@@ -3,7 +3,7 @@ import { FaEdit, FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Products() {
-  //Products Data 
+  //Products Data
   const data = [
     {
       _id: "108",
@@ -187,7 +187,6 @@ function Products() {
     },
   ];
 
-  // 2. Define columns SECOND (Inside the function)
   const columns = [
     { field: "_id", headerName: "ID", width: 90 },
     {
@@ -221,7 +220,10 @@ function Products() {
       renderCell: params => (
         <Link to={`/product/${params.row._id}`}>
           <button className=" px-4 py-1 rounded text-sm cursor-pointer hover:text-slate-600">
-            <FaEdit size={16} onClick={() => console.log("Delete ID:", params.row._id)}/>
+            <FaEdit
+              size={16}
+              onClick={() => console.log("Delete ID:", params.row._id)}
+            />
           </button>
         </Link>
       ),
