@@ -17,10 +17,12 @@ function Menu() {
   return (
     <div className="bg-gray-100 p-[20px] w-[300px] shadow-lg">
       <ul className="flex flex-col items-start justify-start mt-[20px] pl-[20px]">
+        <Link to="/">
         <li className="flex items-center text-[20px] cursor-pointer mt-[20px] transition-colors duration-100 text:p-[20px]">
           <FaHome className="mr-[15px] text-[#ef93db]" />
           Home
         </li>
+        </Link>
 
         <li className="flex items-center text-[20px] cursor-pointer mt-[20px] transition-colors duration-100 ">
           <FaUser className="mr-[15px] text-[#ef93db]" />
